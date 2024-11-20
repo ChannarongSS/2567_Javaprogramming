@@ -1,0 +1,11 @@
+import javax.swing.JOptionPane;
+public static void main(string[] args) {
+         system.out.print("studentID : " + "2413110285\n"+
+                          "studentName : " + "Channarong Saeung\n" + 
+                          "topic : " + "GitHub\n" + 
+                          "data : " +  "11/20/2024\n");
+JOptionpane.showmessageDiaLog(null,
+                              "studentId : 2413110285\n" + "studentName : Channarong Saeung\n" + 
+                              "topic : GitHub\n" + "Data : 11/20/2024"
+                              "WARNING_messAGE.");
+}
