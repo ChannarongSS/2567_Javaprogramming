@@ -6,7 +6,7 @@ public class JAVAExample1 {
 		// TODO Auto-generated method stub
 		Scanner Input = new Scanner(System.in);
 				
-		Decimalformat frm = new Decimalformat("#,###.00");
+		DecimalFormat frm = new DecimalFormat("#,###.00");
 		System.out.print("input product name: ");
 		String produvtName = Input.nextLine();
 		
