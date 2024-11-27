@@ -29,7 +29,7 @@ public class JAVAExample1 {
 		System.out.print("Add VAT 7% is "+ frmtotalwithVat + "baht.");
 		System.out.println();
 		System.out.print("Output using print");
-		System.out.printf("Add VAT 7% is %,.2f ", totalwithVat);
+		System.out.printf("Add VAT 7% is %,.2f ",totalwithVat );
 		
 		Input.close();
 
