@@ -1,6 +1,5 @@
 import javax.swing.*;
-import java.texl.*;
-import java.text.DecimalFormat;
+import java.text.*;
 public class Lab201 { 
 
 	public static void main(String[] args) {
@@ -9,24 +8,28 @@ public class Lab201 {
 		
 		DecimalFormat frm = new DecimalFormat("#,###.00");
 		
-		int numberofCustommer = Integer.parseInt(JOptionPane.showInputDialog("How many customer por bill"););
+		int numberofCustommer = Integer.parseInt(JOptionPane.showInputDialog("How many customer por bill"));
+		
 		double totalprice = BUFFET * numberofCustommer;
 		
-		//System.out.printf("total price is %,.2f baht.", totalprice);
+		
+		//System.out.printf("Total price is %,.2f baht.",totalPrice);	
 		
 		do {
-			isMember = JOptionPane.showInputDialog(null, "Totalprice is " + frm.format(totalprice) + " baht." +
-					"\nDo you have Member card?");
-		}while (isMember==JOptionpane.CANCEl_OPTION);
+			isMember = JOptionPane.showConfirmDialog(null,
+					"Total price is "+frm.format(totalprice) + " baht."+ 
+					"\nDo you have a member card?");
+		}while(isMember==JOptionPane.CANCEL_OPTION); //(isMember==2)
 		
-		if(isMember==JOptionPane.YES_OPTION) {
-			double priceAfterDiscount = totalprice *0.90 ; // discount = totalprice(totalprice*10/100 ตัวอย่างแบบยาว)
-			Joptionpane.showmessageDialog(null, "Amount to be paid is "+frm.format(priceAfterDiscount) priceAfterDiscount+ " Baht." );
-			
-		}else if (isMember==JOptionpane.NO_OPTION) { // if (isMember ==)
-			Joptionpane.showmessageDialog(null, "Amount to be paid is "+ priceAfterDiscount+ " Baht." );
-		}
-		
+		if(isMember==JOptionPane.YES_OPTION) { //if(isMember==0)
+			//คำนวณราคาหลังหักส่วนลด 10%
+			double priceAfterDiscount = totalprice *0.90  ; //discount = totalPrice-(totalPrice*10/100)
+			JOptionPane.showMessageDialog(null, 
+					"Amount to be paid is "+frm.format(priceAfterDiscount) +" baht.");
+		}else if(isMember==JOptionPane.NO_OPTION) { //if(isMember==1)
+			JOptionPane.showMessageDialog(null, 
+					"Amount to be paid is "+totalprice +" baht.");		
+			}
 		
 
 	}

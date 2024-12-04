@@ -1,5 +1,5 @@
 import javax.swing.*;
-improt java.util.*;
+import java.util.*;
 public class Withdrawal {
 
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Withdrawal {
 				JOptionPane.showInputDialog("your balance : " + balance+ 
 				"\nInput money to withdraw"));
 		
-		if(moneywithdraw > balabance) {
+		if(moneywithdraw > balance) {
 			JOptionPane.showInputDialog(null,
 					"Error : Cannot withdraw more than balance",
 					"ERROR",
@@ -26,11 +26,12 @@ public class Withdrawal {
 						"Error : Cannot withdraw " +  (moneywithdraw%100)+ " baht." ,
 						"ERROR",
 						JOptionPane.ERROR_MESSAGE);
-			}else JOptionpane.showMesageDialog(null,
+			}else JOptionPane.showMessageDialog(null,
 					"You withdraw " +moneywithdraw+ " baht. " + 
 			        "\n1,000 = " + (moneywithdraw/1000)+ 
 			        "\n500 =  " + ((moneywithdraw%1000)/500) +
-			        "\n100 = " + ()); 
+			        "\n100 = " + ((moneywithdraw%500)/100)); 
+		
 		
 
 	}

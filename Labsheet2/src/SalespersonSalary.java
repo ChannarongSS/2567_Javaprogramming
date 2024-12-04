@@ -2,11 +2,11 @@ import java.util.*;
 public class SalespersonSalary {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.In);
+		Scanner input = new Scanner(System.in);
 		
 		
 		final double BASE_SALARY = 1000.0;
-		final double COMMISSION_RATE;
+		final double COMMISSION_RATE = 0.15;
 		final int SENTiNEL = -1;
 		
 		int sales;
