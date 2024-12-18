@@ -27,7 +27,7 @@ public class Lad401 {
 		public static void checkEmailErorr(String email) {
 			while (email.startsWith("s") || email.contains(" ")) {
 				email = JOptionPane.showInputDialog("Invalid e-mail. input your e-mail again");
-		}
+		}      
 			email = email.toLowerCase();
 			JOptionPane.showMessageDialog(null, 
 					checkEmail(email)
