@@ -35,8 +35,6 @@ public class Lad403 {
 			}//end for
 		return initailLetter;
 		}
-		
-	
 	
 
 }
