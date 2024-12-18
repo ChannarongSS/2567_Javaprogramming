@@ -19,11 +19,7 @@ public class Lad403 {
 		System.out.println(abbrviatName(Fullname));
 		
 		input.close();
-		
-		
-		
-		
-		
+				
 
 	}
 	
@@ -41,4 +37,4 @@ public class Lad403 {
 		}
 	
 
-}
+}  
