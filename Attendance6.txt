@@ -1,4 +1,4 @@
 StudentID : 2413110285
 StudentName : Channarong Saeung
-topic :Array
+topic : Array and Array Method
 Date : 12/25/2024
