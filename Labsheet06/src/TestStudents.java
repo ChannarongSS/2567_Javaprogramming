@@ -14,4 +14,4 @@ public class TestStudents {
 		System.out.println("\nStudent 2 details:");
 		student2.displayStudentDetails();
 	}
-}
+}//end of Class
