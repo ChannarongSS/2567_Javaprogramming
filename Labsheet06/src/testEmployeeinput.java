@@ -38,7 +38,7 @@ public class testEmployeeinput {
 		Line('*');
 		
 		
-		scan.getClass();
+		scan.close();
 	} //end of main();
 
 	
