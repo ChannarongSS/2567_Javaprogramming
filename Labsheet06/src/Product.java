@@ -13,9 +13,9 @@ public class Product {
 		}
 		
 		//Method to calculateTotalPrice
-		public double calculateTotalPrice() {
+		//public double calculateTotalPrice() {
 			
-		}
+		//}
 		
 }
 
