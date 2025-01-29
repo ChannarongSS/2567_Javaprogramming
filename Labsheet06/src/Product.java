@@ -1,21 +1,24 @@
-
 public class Product {
-	//private two attribute
+ 
 		private String name;
-		private double  price;
+		private double price;
 		private double vatRate;
 		
-		//Method to setProductDetails 
-		public void setProductDetails(String stdName,double stdprice, double stdvatRate) {
-			name = stdName;
-			price = stdprice;	
-			vatRate = stdvatRate;
+		public void setProductDetails(String stuName, double stuPrice, double stuvatrate) {
+			name = stuName;
+			price = stuPrice;
+			vatRate = stuvatrate;
+ 
 		}
 		
-		//Method to calculateTotalPrice
-		//public double calculateTotalPrice() {
-			
-		//}
+		public double calculateTotalPrice() {
+			return price + (price * vatRate / 100);
+		}
 		
-}
-
+		public void displayProductDetails() {
+			System.out.println("Product Details:");
+			System.out.println("Product Name: " + name);
+			System.out.println("Price (Before VAT): " + price);
+			System.out.println("Price (After VAT): " + calculateTotalPrice());
+		}
+	}
