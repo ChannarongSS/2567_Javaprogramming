@@ -1,0 +1,5 @@
+StudentID : 2413110285
+StudentName : Channarong Saeung
+topic : - Inheritance Concept
+- Abstract and Interface
+Date : 2/19/2025
