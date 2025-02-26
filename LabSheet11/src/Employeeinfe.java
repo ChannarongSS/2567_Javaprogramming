@@ -4,10 +4,11 @@ import java.util.Scanner;
 public class Employeeinfe {
 
 	public static void main(String[] args) throws IOException{
-		// TODO Auto-generated method stub
+		//ประกาศ object input เพื่อรับข้อมูลทาง keyboard
 		Scanner sc = new Scanner(System.in);
 		
 		String choose;
+		
 		System.out.print("Insert or Search Data:");
 		choose = sc.next() .toLowerCase();
 		
