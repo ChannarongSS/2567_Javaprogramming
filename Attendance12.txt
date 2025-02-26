@@ -1,0 +1,4 @@
+StudentID : 2413110285
+StudentName : Channarong Saeung
+topic : File Operation
+Date : 2/26/2025
